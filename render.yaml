@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: brutal-bomber-api
+    env: node
+    buildCommand: npm install
+    startCommand: node brutal_bomber.js
+    envVars:
+      - key: PORT
+        value: 3000
+    plan: free
